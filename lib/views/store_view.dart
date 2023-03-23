@@ -1,6 +1,8 @@
 import 'package:cocoa_kg/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
+import '../components/home_page_components/store_row.dart';
+
 class StoreView extends StatefulWidget {
   const StoreView({Key? key}) : super(key: key);
 
@@ -42,97 +44,39 @@ class _StoreViewState extends State<StoreView> {
               child: Column(
                 children: [
                   SizedBox(height: 25),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto01.png",
-                              height: 280,
-                              width: 250,
-                            )),
-                      ),
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto02.png",
-                              height: 280,
-                              width: 250,
-                            )),
-                      ),
-                    ],
+                  StoreRow(
+                    image: Image.asset(
+                      "assets/images/store_images/foto01.png",
+                    ),
+                    onTap: () {},
+                    image1:
+                        Image.asset("assets/images/store_images/foto02.png"),
+                    onTap1: () {},
                   ),
                   SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto03.png",
-                              height: 280,
-                              width: 250,
-                            )),
-                      ),
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto04.png",
-                              height: 280,
-                              width: 250,
-                            )),
-                      ),
-                    ],
-                  ),
+                  StoreRow(
+                      onTap: () {},
+                      image:
+                          Image.asset("assets/images/store_images/foto03.png"),
+                      onTap1: () {},
+                      image1:
+                          Image.asset("assets/images/store_images/foto04.png")),
                   SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto05.png",
-                              height: 280,
-                              width: 250,
-                            )),
-                      ),
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto06.png",
-                              height: 250,
-                              width: 250,
-                            )),
-                      ),
-                    ],
-                  ),
+                  StoreRow(
+                      onTap: () {},
+                      image:
+                          Image.asset("assets/images/store_images/foto05.png"),
+                      onTap1: () {},
+                      image1:
+                          Image.asset("assets/images/store_images/foto06.png")),
                   SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto07.png",
-                              height: 280,
-                              width: 250,
-                            )),
-                      ),
-                      Expanded(
-                        child: InkWell(
-                            onTap: () {},
-                            child: Image.asset(
-                              "assets/images/store_images/foto08.png",
-                              height: 320,
-                              width: 250,
-                            )),
-                      ),
-                    ],
-                  ),
+                  StoreRow(
+                      onTap: () {},
+                      image:
+                          Image.asset("assets/images/store_images/foto07.png"),
+                      onTap1: () {},
+                      image1:
+                          Image.asset("assets/images/store_images/foto08.png")),
                 ],
               ),
             ),
