@@ -56,7 +56,7 @@ class _RegisterViewState extends State<RegisterView> {
                   chekc();
                 },
                 decoration: InputDecoration(
-                  hintText: "Имя",
+                  hintText: "Аты-жөнү",
                   focusColor: AppColors.color2,
                   prefixIcon: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
@@ -79,7 +79,7 @@ class _RegisterViewState extends State<RegisterView> {
                   chekc();
                 },
                 decoration: InputDecoration(
-                  hintText: "Эл.почта",
+                  hintText: "Эл.почтасы",
                   focusColor: AppColors.mainColor,
                   prefixIcon: Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),

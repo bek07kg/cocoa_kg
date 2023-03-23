@@ -1,4 +1,4 @@
-import 'package:cocoa_kg/components/bottom_nav.dart';
+import 'package:cocoa_kg/components/home_page_components/bottom_nav.dart';
 import 'package:cocoa_kg/constants/app_colors.dart';
 import 'package:flutter/material.dart';
 
@@ -16,45 +16,35 @@ class _HomeViewState extends State<HomeView> {
       backgroundColor: AppColors.color2,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: AppColors.mainColor,
+        backgroundColor: AppColors.color2,
+        foregroundColor: AppColors.mainColor,
         centerTitle: true,
-        title: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text(
-              "Привет, name",
-              style: TextStyle(
-                color: AppColors.color2,
-                fontFamily: "Pacifico",
-              ),
-            ),
-            IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.notifications,
-                  color: AppColors.color2,
-                )),
-          ],
+        title: Text(
+          "Cocoa kg",
+          style: TextStyle(
+            color: AppColors.mainColor,
+            fontSize: 32,
+            fontFamily: "Pacifico",
+          ),
         ),
       ),
-      body: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 20),
+      body: Container(
+        height: double.infinity,
+        width: double.infinity,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage("assets/images/back.jpg"),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            SizedBox(height: 30),
-            InkWell(
-              onTap: () {},
-              child: Image.asset(
-                "assets/images/foto1.png",
-                height: 250,
-                width: double.infinity,
-              ),
-            ),
-          ],
+          children: [],
         ),
       ),
       bottomNavigationBar: BottomNav(),
+      drawer: Drawer(
+        backgroundColor: AppColors.mainColor,
+      ),
     );
   }
 }

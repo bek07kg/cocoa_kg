@@ -10,7 +10,7 @@ class CocoaKg extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: "cocoa kg",
-      home: LoginView(),
+      home: HomeView(),
     );
   }
 }
