@@ -1,7 +1,6 @@
+import 'package:cocoa_kg/app/app.dart';
 import 'package:flutter/material.dart';
 
-import 'app/cocoa_kg.dart';
-
 void main() {
-  runApp(CocoaKg());
+  runApp(MyApp());
 }

@@ -21,7 +21,7 @@ class _HomeViewState extends State<HomeView> {
         centerTitle: true,
         title: Text(
           "Cocoa kg",
-          style: TextStyle(
+          style: const TextStyle(
             color: AppColors.mainColor,
             fontSize: 32,
             fontFamily: "Pacifico",
