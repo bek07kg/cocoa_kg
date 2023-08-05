@@ -1,7 +1,7 @@
 import 'package:cocoa_kg/constants/app_colors.dart';
 import 'package:cocoa_kg/modules/home/home.dart';
 import 'package:cocoa_kg/modules/main/logic/main_cubit.dart';
-import 'package:cocoa_kg/modules/profile/profile.dart';
+import 'package:cocoa_kg/modules/menu/menu.dart';
 import 'package:cocoa_kg/modules/shopping/shopping.dart';
 import 'package:cocoa_kg/modules/store/store.dart';
 import 'package:flutter/material.dart';
@@ -17,7 +17,7 @@ class MainView extends StatelessWidget {
       HomeView(),
       StoreView(),
       ShoppingView(),
-      ProfileView(),
+      MenuView(),
     ]);
   }
 }
@@ -38,28 +38,42 @@ class MainScreen extends StatelessWidget {
         onTap: context.read<MainCubit>().change,
         fixedColor: AppColors.mainColor,
         unselectedItemColor: Colors.black,
-        items: const [
+        items: [
           BottomNavigationBarItem(
-            activeIcon: Icon(Icons.home_filled),
-            icon: Icon(Icons.home_filled),
+            activeIcon: const Icon(Icons.home_filled),
+            icon: Image.asset(
+              "assets/icons/home_icon.png",
+              height: 28,
+              width: 28,
+            ),
             label: "Башкы бет",
           ),
           BottomNavigationBarItem(
-            activeIcon: Icon(Icons.store),
-            icon: Icon(Icons.store),
+            activeIcon: const Icon(Icons.local_mall),
+            icon: Image.asset(
+              "assets/icons/local_mall_icon.png",
+              height: 25,
+              width: 25,
+            ),
             label: "Магазин",
           ),
           BottomNavigationBarItem(
-            activeIcon: Icon(
-              Icons.shopping_cart,
+            activeIcon: const Icon(Icons.shopping_cart),
+            icon: Image.asset(
+              "assets/icons/shopping_cart_icon.png",
+              height: 25,
+              width: 25,
             ),
-            icon: Icon(Icons.shopping_cart),
             label: "Корзина",
           ),
           BottomNavigationBarItem(
-            activeIcon: Icon(Icons.person),
-            icon: Icon(Icons.person),
-            label: "Жеке кабинет",
+            activeIcon: const Icon(Icons.menu),
+            icon: Image.asset(
+              "assets/icons/menu_icon.png",
+              height: 25,
+              width: 25,
+            ),
+            label: "Меню",
           ),
         ],
       ),

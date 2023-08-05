@@ -1,6 +1,6 @@
 import 'package:cocoa_kg/modules/home/home.dart';
 import 'package:cocoa_kg/modules/main/main.dart';
-import 'package:cocoa_kg/modules/profile/profile.dart';
+import 'package:cocoa_kg/modules/menu/logic/menu_cubit.dart';
 import 'package:cocoa_kg/modules/shopping/logic/shopping_cubit.dart';
 import 'package:cocoa_kg/modules/store/store.dart';
 import 'package:flutter/material.dart';
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
             create: (context) => ShoppingCubit(),
           ),
           BlocProvider(
-            create: (context) => ProfileCubit(),
+            create: (context) => MenuCubit(),
           ),
         ],
         child: const MainView(),
