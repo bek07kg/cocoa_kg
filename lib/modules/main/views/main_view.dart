@@ -37,12 +37,13 @@ class MainScreen extends StatelessWidget {
         currentIndex: context.watch<MainCubit>().state,
         onTap: context.read<MainCubit>().change,
         fixedColor: AppColors.mainColor,
-        unselectedItemColor: Colors.black,
+        unselectedItemColor: AppColors.mainColor,
         items: [
           BottomNavigationBarItem(
             activeIcon: const Icon(Icons.home_filled),
             icon: Image.asset(
               "assets/icons/home_icon.png",
+              color: AppColors.mainColor,
               height: 28,
               width: 28,
             ),
@@ -52,6 +53,7 @@ class MainScreen extends StatelessWidget {
             activeIcon: const Icon(Icons.local_mall),
             icon: Image.asset(
               "assets/icons/local_mall_icon.png",
+              color: AppColors.mainColor,
               height: 25,
               width: 25,
             ),
@@ -61,6 +63,7 @@ class MainScreen extends StatelessWidget {
             activeIcon: const Icon(Icons.shopping_cart),
             icon: Image.asset(
               "assets/icons/shopping_cart_icon.png",
+              color: AppColors.mainColor,
               height: 25,
               width: 25,
             ),
@@ -70,6 +73,7 @@ class MainScreen extends StatelessWidget {
             activeIcon: const Icon(Icons.menu),
             icon: Image.asset(
               "assets/icons/menu_icon.png",
+              color: AppColors.mainColor,
               height: 25,
               width: 25,
             ),
